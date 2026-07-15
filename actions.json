@@ -1,0 +1,82 @@
+{
+  "_comment": "Market and language-specific skills for the Taibu AI OS 'Actions' launcher. The app ships a universal core (onboard, audit, level-up, dashboard, roast, find-skills) built in; this file adds everything else. A card only appears if the skill folder is actually installed in the user's project, so listing a skill here is safe even for users who don't have it. Labels resolve to the active UI language and fall back to English. Edit this file to add or reword an action: every installed OS picks it up on next launch, with no app release.",
+  "actions": [
+    {
+      "cmd": "/leia-leadid",
+      "icon": "🔎",
+      "label": { "en": "Find leads", "et": "Leia leadid", "de": "Leads finden", "ru": "Найти лиды" },
+      "desc": {
+        "en": "Pull business leads from Google Maps into a CSV",
+        "et": "Korja Google Mapsist ettevõtete kontaktid CSV-sse",
+        "de": "Firmenkontakte aus Google Maps in eine CSV holen",
+        "ru": "Соберите контакты компаний из Google Maps в CSV"
+      }
+    },
+    {
+      "cmd": "/cold-email",
+      "icon": "✉️",
+      "label": { "en": "Cold email campaign", "et": "Külma e-maili kampaania", "de": "Kaltakquise-Kampagne", "ru": "Кампания холодных писем" },
+      "desc": {
+        "en": "Build an outreach sequence with several angles and A/B variants",
+        "et": "Ehita outreach-sekvents mitme nurga ja A/B variantidega",
+        "de": "Baue eine Outreach-Sequenz mit mehreren Ansätzen und A/B-Varianten",
+        "ru": "Соберите серию писем с разными углами и A/B вариантами"
+      }
+    },
+    {
+      "cmd": "/vasta-huvitatule",
+      "icon": "💬",
+      "label": { "en": "Reply to interested leads", "et": "Vasta huvitatutele", "de": "Interessenten beantworten", "ru": "Ответить заинтересованным" },
+      "desc": {
+        "en": "Draft replies to leads who answered your campaign",
+        "et": "Koosta vastused leadidele, kes kampaaniale vastasid",
+        "de": "Entwürfe für Leads, die auf deine Kampagne geantwortet haben",
+        "ru": "Черновики ответов лидам, которые откликнулись"
+      }
+    },
+    {
+      "cmd": "/instantly",
+      "icon": "📬",
+      "label": { "en": "Outreach stats", "et": "Outreachi statistika", "de": "Outreach-Statistik", "ru": "Статистика рассылок" },
+      "desc": {
+        "en": "Pull real numbers from your Instantly campaigns",
+        "et": "Tõmba päris numbrid oma Instantly kampaaniatest",
+        "de": "Hole echte Zahlen aus deinen Instantly-Kampagnen",
+        "ru": "Получите реальные цифры из кампаний Instantly"
+      }
+    },
+    {
+      "cmd": "/reklaamvisuaalid",
+      "icon": "🖼️",
+      "label": { "en": "Ad visuals", "et": "Reklaamvisuaalid", "de": "Werbemotive", "ru": "Рекламные визуалы" },
+      "desc": {
+        "en": "Generate pixel-exact ad images in your brand colours",
+        "et": "Genereeri piksel-täpsed reklaampildid sinu brändivärvides",
+        "de": "Erzeuge pixelgenaue Werbebilder in deinen Markenfarben",
+        "ru": "Создайте точные рекламные изображения в цветах бренда"
+      }
+    },
+    {
+      "cmd": "/make-blueprint",
+      "icon": "⚙️",
+      "label": { "en": "Make.com blueprint", "et": "Make.com blueprint", "de": "Make.com Blueprint", "ru": "Blueprint для Make.com" },
+      "desc": {
+        "en": "Generate an automation scenario you can import",
+        "et": "Genereeri imporditav automatiseeringu stsenaarium",
+        "de": "Erzeuge ein importierbares Automatisierungsszenario",
+        "ru": "Создайте готовый сценарий автоматизации"
+      }
+    },
+    {
+      "cmd": "/session-handoff",
+      "icon": "🔄",
+      "label": { "en": "Session handoff", "et": "Sessiooni üleandmine", "de": "Session-Übergabe", "ru": "Передача сессии" },
+      "desc": {
+        "en": "Wrap up this session so the next one continues cleanly",
+        "et": "Võta sessioon kokku, et järgmine jätkaks sujuvalt",
+        "de": "Fasse die Session zusammen, damit die nächste nahtlos weitergeht",
+        "ru": "Подведите итог сессии, чтобы следующая продолжилась гладко"
+      }
+    }
+  ]
+}

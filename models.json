@@ -1,0 +1,16 @@
+{
+  "_comment": "Model picker lists, pulled by the app on launch (models:sync) so new model releases appear without an app update. Keys are engine ids from providers.js. The bundled arrays in providers.js are only the offline/first-run fallback. IMPORTANT: do not add a 'codex-oss' key. That engine lists whatever Ollama reports locally, and a key here would override the user's real local models. Claude ids are tier aliases, so 'claude --model sonnet' always resolves to the latest model of that tier and never goes stale. Only list ids that `claude --model` actually accepts.",
+  "claude": [
+    { "id": "sonnet", "label": "Sonnet 5", "desc": "Balanced, fast and capable (default)" },
+    { "id": "opus", "label": "Opus 4.8", "desc": "Most capable, best for hard builds" },
+    { "id": "fable", "label": "Fable 5", "desc": "Anthropic's flagship, for the hardest problems" },
+    { "id": "haiku", "label": "Haiku 4.5", "desc": "Fastest, for simple tasks" }
+  ],
+  "codex": [
+    { "id": "", "label": "Default", "desc": "Codex CLI default model (recommended)" }
+  ],
+  "defaultModel": {
+    "claude": "sonnet",
+    "codex": ""
+  }
+}
