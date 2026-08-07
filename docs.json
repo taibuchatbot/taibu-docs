@@ -1,9 +1,18 @@
 {
   "order": [
     "getting-started.md",
+    "tutorial.md",
+    "chat-and-agents.md",
+    "memory.md",
     "skills.md",
+    "apps.md",
+    "routines.md",
+    "outbox.md",
+    "connections.md",
+    "team.md",
+    "files.md",
+    "settings.md",
     "ai-engines.md",
-    "roast.md",
-    "tutorial.md"
+    "troubleshooting.md"
   ]
 }

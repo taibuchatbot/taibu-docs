@@ -1,65 +1,43 @@
-# Start here
+# Getting started
 
-Taibu AI OS is your personal AI operating system. This guide helps you get a result in the first hour.
+Taibu AI OS turns an AI assistant into a business operating system. You give it goals in plain language; it turns them into steps and does the work.
 
-## What is it?
+## What you need
 
-Taibu AI OS connects Claude AI to your project files, tools, and way of thinking. You don't just ask AI questions — you build yourself a personal operator that knows your business.
+- **A licence key** for Taibu, emailed when you bought it
+- **Claude Code**, the engine that does the work. The app installs it for you
+- **A Claude account**: Claude Pro, Max or Team, or Anthropic API billing
 
-## First steps
+Your Claude subscription is separate from your Taibu licence.
 
-### 1. Sign in to Claude
+## First run
 
-On first launch, a sign-in guide opens. Choose whether you use a Claude subscription (Pro/Max/Team) or API billing, and follow the steps. You can check the status anytime under **Settings → CLAUDE STATUS**.
+1. **Activate** with your licence key.
+2. **Pick your language.** This also sets the language of every new project you create.
+3. **Choose a folder** where your projects will be saved.
+4. **Install Claude Code and sign in.** Press "Install Claude Code", then "I have a Claude subscription", and finish in your browser. Taibu notices within a few seconds.
+5. **Create your first project.**
 
-### 2. Create your first project
+If the browser does not open during sign-in, expand "If something doesn't work…" for copy-paste steps.
 
-Click the **project picker** button at the top left ("Pick a project"), then **"Add project…"**. Enter a project name (e.g. a client's name). Taibu copies the whole template structure automatically.
+## Projects
 
-### 3. Run /onboard
+A project is a folder holding one body of work: your business, or one client. It contains your chats, memory, skills, keys, routines and files. Switching projects switches all of it.
 
-Type in the chat:
+Most people need only one. Create more when work should stay genuinely separate.
 
-```
-/onboard
-```
+**Sidebar → "Projects" → "Add project…"**. Tick "Use my profile from …" to copy your personal answers across so you do not fill them in twice.
 
-Claude asks you 7 questions — who you are, what you do, which tools you have. The answers are saved to the `context/` folder and make every later conversation much more accurate.
+New projects take their language from Settings, not from the create dialog. Set the app language first if you want a project in a different language.
 
-### 4. Talk to Claude
+Hovering a project gives you "Clone", "Export (zip)" and "Remove from list". Removing takes it out of Taibu; the files stay on disk.
 
-The chat works like Claude.ai, but Claude sees your project files and can edit them directly. Ask something specific:
+## Setting up your profile
 
-- *"Look at intake.md and tell me what's missing"*
-- *"Draft an email for a new client in property management"*
-- *"What could I automate in my workflow?"*
+The first time you open a fresh project, Taibu runs a short tour and then asks about you: your name, what you do, your priorities, and a sample of your writing.
 
-### 5. Connect your tools
+The writing sample matters more than people expect. Paste something you actually wrote, unedited. That is what teaches Taibu your voice.
 
-Next to the chat box there's a **+** button. From there you pick a popular connection — Google Drive, Gmail, Notion, Slack, etc. — and Claude walks you through the setup. That's how Claude gets to work with your real data.
+"Skip for now" does not come back. If you skip it, edit everything later behind the brain icon, "My data and goals".
 
-You can attach a file to the chat with the **paperclip** icon (images, documents). To connect GitHub, see **Settings → GITHUB**.
-
-### 6. Edit files directly
-
-Click a file in the file tree on the left (e.g. `CLAUDE.md` or `intake.md`). The file opens as editable text. **Ctrl+S** saves. HTML files can also be viewed as a preview, and images open as images.
-
-### 7. Run /audit after a week
-
-```
-/audit
-```
-
-Claude reviews what's done and what's missing. Good practice: once a week.
-
----
-
-## Quick reference
-
-| Command | What it does |
-|------|----------|
-| `/onboard` | Sets up the project (fills the context folders) |
-| `/audit` | Gap report — what's missing |
-| `/level-up` | The weekly 3M interview |
-| `/roast` | Tests an idea with a 5-persona council |
-| `/clear` | Clears the chat (starts a new session) |
+If you are joining a team rather than running the business, Taibu gives you a shorter setup and your company knowledge arrives when you join the team.
