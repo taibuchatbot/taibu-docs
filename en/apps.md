@@ -12,6 +12,8 @@ The box at the top of the page is the whole interface. Type what you want to see
 
 Not sure what to ask for? Watch the box. It types out real examples while you are idle.
 
+![The Apps page before anything is built](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/22b-apps-empty.png)
+
 Each tile is a **live render of the app itself**, not an icon, so you can tell them apart at a glance. A tile that says **"Not running"** is a live app whose server is stopped: open it and press **"Start server"**.
 
 ## One dashboard instead of four browser tabs
