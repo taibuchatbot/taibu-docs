@@ -4,6 +4,8 @@ A **routine** is a prompt that runs on a schedule: a morning brief, a weekly aud
 
 **Calendar-clock icon → "Routines"**
 
+![The routine list, with one routine open](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/17b-routines-list.png)
+
 ## Creating one
 
 **"Add routine"**, then start from a recipe or write your own:

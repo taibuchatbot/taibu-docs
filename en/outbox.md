@@ -8,6 +8,8 @@ Every email, post or message Taibu prepares lands here as a draft. The amber num
 
 The right pane shows which routine or skill produced it, the recipient, and the body **in an editable box**. For small fixes, just type in the box; your edit is saved before sending.
 
+![A draft waiting for approval](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/19-outbox.png)
+
 | Button | What it does |
 |---|---|
 | **Approve & send** | Marks it approved, then delivers it |

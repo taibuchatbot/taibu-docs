@@ -2,6 +2,8 @@
 
 **Gear icon → "Settings"**, with General, Keys and Memory tabs.
 
+![Settings, the General tab](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/26-settings.png)
+
 | Setting | What it does |
 |---|---|
 | **My data and goals** | Edit your profile |

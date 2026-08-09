@@ -11,7 +11,7 @@ The purple rail on the left is your navigation:
 | Calendar-clock | Routines |
 | Inbox | Outbox, drafts waiting for you |
 | Grid | Apps |
-| Blocks | Skills |
+| Puzzle piece | Skills |
 | People | Team |
 | Plug | Connections |
 | Brain | My data and goals |
@@ -19,6 +19,8 @@ The purple rail on the left is your navigation:
 | Gear | Settings |
 
 Next to it is the sidebar with your project switcher, file search and file tree. The rest is your working area.
+
+![The three columns](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/10-layout.png)
 
 ## The loop
 

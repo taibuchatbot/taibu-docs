@@ -8,6 +8,8 @@ Team sharing lets a group work from the same company knowledge. Everything share
 
 The team leader creates **scopes** (audiences, like sales, marketing, or one per client), decides who is in each, and picks what gets shared. A teammate without a scope's key genuinely cannot read that scope, even if they can see the sync folder.
 
+![Scopes, the access matrix and the shared folder switches](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/23-team-admin.png)
+
 ## Where it syncs
 
 | Option | Good for |
@@ -29,6 +31,8 @@ For a git repository, each person needs git signed in on their machine before it
 1. Paste the team code under **"Join a team"**
 2. Press **"Sync now"**. You will see "Waiting for your admin"
 3. Your leader approves you with one click, and your access arrives on the next sync
+
+![What a member sees while waiting for approval](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/24-team-pending.png)
 
 You only ever send one code.
 
@@ -62,6 +66,8 @@ The leader can switch on activity reports. Each member decides whether to take p
 **Sent:** how many conversations and with which agents, how memory grew, topic and skill names, activity per day, and where work seems to get stuck.
 
 **Never sent:** what you wrote or the AI replied, your drafts, your private memory, your keys, anything personal.
+
+![The consent card a member sees](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/25-team-consent.png)
 
 Nothing is sent until you agree, and you can stop at any time.
 

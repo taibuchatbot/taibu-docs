@@ -4,6 +4,8 @@ Taibu remembers your work across months. Everything is plain files in your proje
 
 **Gear icon → Settings → "Memory"**
 
+![The memory panel](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/15-memory.png)
+
 ## Three layers
 
 | Layer | What it is |

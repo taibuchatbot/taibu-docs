@@ -2,6 +2,8 @@
 
 Taibu AI OS turns an AI assistant into a business operating system. You give it goals in plain language; it turns them into steps and does the work.
 
+![Taibu on the Home screen](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/01-hero.png)
+
 ## What you need
 
 - **A licence key** for Taibu, emailed when you bought it
@@ -14,7 +16,11 @@ Your Claude subscription is separate from your Taibu licence.
 
 1. **Activate** with your licence key.
 2. **Pick your language.** This also sets the language of every new project you create.
+
+![The language picker](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/04-language.png)
 3. **Choose a folder** where your projects will be saved.
+
+![Choosing where projects live](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/05-folder-warning.png)
 4. **Install Claude Code and sign in.** Press "Install Claude Code", then "I have a Claude subscription", and finish in your browser. Taibu notices within a few seconds.
 5. **Create your first project.**
 
@@ -28,6 +34,8 @@ Most people need only one. Create more when work should stay genuinely separate.
 
 **Sidebar → "Projects" → "Add project…"**. Tick "Use my profile from …" to copy your personal answers across so you do not fill them in twice.
 
+![Adding a project](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/07-new-project.png)
+
 New projects take their language from Settings, not from the create dialog. Set the app language first if you want a project in a different language.
 
 Hovering a project gives you "Clone", "Export (zip)" and "Remove from list". Removing takes it out of Taibu; the files stay on disk.
@@ -37,6 +45,8 @@ Hovering a project gives you "Clone", "Export (zip)" and "Remove from list". Rem
 The first time you open a fresh project, Taibu runs a short tour and then asks about you: your name, what you do, your priorities, and a sample of your writing.
 
 The writing sample matters more than people expect. Paste something you actually wrote, unedited. That is what teaches Taibu your voice.
+
+![The profile form, on the writing samples](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/09-profile.png)
 
 "Skip for now" does not come back. If you skip it, edit everything later behind the brain icon, "My data and goals".
 

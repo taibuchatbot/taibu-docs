@@ -4,6 +4,8 @@
 
 Green means ready, amber means partly set up, grey means not connected.
 
+![The Connections page](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/20-connections.png)
+
 ## Three kinds
 
 **API-key tools** (Stripe, HubSpot, QuickBooks, Meta Ads, Google Ads, and locally Merit Aktiva, Montonio, Pipedrive). Press "Connect" and Taibu explains which keys you need, where to get them, and walks you through adding them.
@@ -21,5 +23,7 @@ The tools on offer differ by language, because the useful accounting and CRM too
 **Gear icon → Settings → "Keys"**
 
 Add a key with its name (like STRIPE_SECRET_KEY) and value, then "Add". The eye button reveals a value; the trash removes it. Edits save when you click away or press Enter.
+
+![The Keys tab](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/21-keys.png)
 
 **Never paste an API key into the chat.** Taibu always sends you to this panel instead. Keys are stored per project in a plain file on your disk, so treat that folder like a password file: keep it out of public repositories and shared drives.

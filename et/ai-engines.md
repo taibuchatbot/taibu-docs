@@ -10,9 +10,9 @@ Taibu AI OS töötab kolme erineva AI-mootoriga. Vali oma **Seaded → AI-mootor
 | **Hind** | Su olemasolev tellimus | Su olemasolev tellimus | Tasuta — jookseb su masinas |
 | **Internet** | Vajalik | Vajalik | **Pole vaja** — täielikult offline |
 | **Kvaliteet** | Parim — täiskogemus | Väga hea | Sõltub mudelist ja riistvarast — keerukatel mitmesammulistel töödel märgatavalt nõrgem |
-| **Oskused (/onboard, /audit…)** | Natiivne | Töötab AGENTS.md silla kaudu | Töötab AGENTS.md silla kaudu, vähem kindlalt |
+| **Taibu liides (plaanikaardid, rutiinid, oskused)** | Natiivne | Täielik, `AGENTS.md` kaudu | `AGENTS.md` kaudu, vähem kindlalt |
 
-**Meie soovitus:** Claude Code täiskogemuseks. Codex, kui maksad juba ChatGPT eest ja mitte Claude'i eest. Lokaalmudelid siis, kui privaatsus või offline-töö on olulisem kui lihv.
+**Meie soovitus:** Claude Code on kõige lihvitum, aga nüüd saab ka Codex täieliku Taibu kogemuse: plaanikaardid, `taibu` plokid ja rutiinide loomine. Vali Codex, kui maksad juba ChatGPT eest ja mitte Claude'i eest. Lokaalmudelid siis, kui privaatsus või offline-töö on olulisem kui lihv.
 
 ## Claude Code (vaikimisi)
 
@@ -23,7 +23,7 @@ Taibu AI OS töötab kolme erineva AI-mootoriga. Vali oma **Seaded → AI-mootor
 
 1. Paigalda: `npm install -g @openai/codex`
 2. Seaded → AI-mootor → **OpenAI Codex** — app avab `codex login`; logi brauseris sisse oma ChatGPT kontoga.
-3. Ongi kõik. Projekti juhised toimivad automaatselt (tööruumis on `AGENTS.md`, mida Codex loeb).
+3. Ongi kõik. Taibu hoiab su projekti `AGENTS.md` faili ajakohasena nii sinu projekti juhiste kui ka oma elavate konventsioonidega, nii et Codex loeb need automaatselt. Saad samad plaanikaardid, `taibu` plokid ja rutiinide loomise nagu Claude'is.
 
 ## Lokaalmudel (Ollama)
 

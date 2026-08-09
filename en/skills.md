@@ -2,9 +2,11 @@
 
 A **skill** is a packaged ability: run an audit, build an app, pressure-test an idea, write outreach.
 
-**Blocks icon → "Skills"** lists them as "Built-in" and "Your skills".
+**Puzzle icon → "Skills"** lists them as "Built-in" and "Your skills".
 
 Each has a toggle. Turning one off removes it from the AI's repertoire in this project. "Edit" opens the skill so you can change how it behaves.
+
+![The Skills page](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/16-skills.png)
 
 ## Running one
 
