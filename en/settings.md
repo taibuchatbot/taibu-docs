@@ -1,12 +1,13 @@
 # Settings and engines
 
-**Gear icon → "Settings"**, with General, Keys and Memory tabs.
+**Gear icon → "Settings"**, with General, My data and goals, Keys and Memory tabs.
+
+**My data and goals** is where your profile lives: who you are, what you sell, your priorities for the quarter, your writing samples. It used to sit behind its own icon in the left rail. Saving it hands off to the AI, which re-reads it and rebuilds your context files.
 
 ![Settings, the General tab](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/26-settings.png)
 
 | Setting | What it does |
 |---|---|
-| **My data and goals** | Edit your profile |
 | **Open on start** | Land on Home or Chat |
 | **Show technical details in chat** | Show the commands and file reads the AI runs |
 | **AI model / Permission mode / Effort** | Settings for the current agent |

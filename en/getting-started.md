@@ -48,6 +48,6 @@ The writing sample matters more than people expect. Paste something you actually
 
 ![The profile form, on the writing samples](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/09-profile.png)
 
-"Skip for now" does not come back. If you skip it, edit everything later behind the brain icon, "My data and goals".
+"Skip for now" does not come back. If you skip it, edit everything later in **Settings → My data and goals**.
 
 If you are joining a team rather than running the business, Taibu gives you a shorter setup and your company knowledge arrives when you join the team.

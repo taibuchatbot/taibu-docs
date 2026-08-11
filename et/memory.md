@@ -1,25 +1,65 @@
-# Kuidas Taibu mäletab
+# Mida Taibu mäletab
 
-Taibu on ehitatud nii, et see mäletab su äri kuude kaupa, mitte ainult praegust vestlust. Mälu on kolmekihiline ja kõik on tavaliste failidena su projektis, mida saad lugeda, muuta või kustutada paneelil **Mida Taibu mäletab** (märkmiku ikoon vasakul).
+Taibu mäletab sinu tööd kuude kaupa. Kõik on sinu projektis lihtfailidena, mida saad lugeda, muuta või kustutada.
 
-## Kolm kihti
+**Hammasratta ikoon → Seaded → "Mälu"**
 
-- **Koondtõde (`memory.md`)** — lühike kureeritud kokkuvõte sellest, mis on sinust ja su tööst kõige tähtsam. Taibu laeb selle automaatselt igasse vestlusse, nii et ta ei alusta kunagi tühjalt kohalt.
-- **Struktureeritud faktid (`memory/facts/`)** — üks fail iga püsiva fakti kohta: otsused, eelistused, hinnad, kes su kliendid on. Iga fakt märgib, **millal** see õpiti, **milline agent** selle õppis, **kes** seda ütles, **täpsed sõnad** ja **millised failid** üle vaadata. Nii saab Taibu tsiteerida allikat, mitte oletada.
-- **Ajajoon (`memory/journal/` ja `memory/today.md`)** — päev-päevalt kasvav logi sellest, mis toimus. Midagi ei visata ära, nii et vana kontekst jääb leitavaks.
+![The memory panel](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/15-memory.png)
 
-## Meenutamine, mis ulatub tagasi
+## Kolm kihti ja failid nende taga
 
-Küsi Taibult midagi kuude tagant, isegi teiste sõnadega, ja ta otsib oma mälust ning vastab **koos viidetega**: milline fail, mis kuupäev ja kes ütles. Kui ta ei leia midagi asjakohast, ütleb ta seda ausalt, mitte ei mõtle vastust välja. Saad ka ise mälust otsida mälupaneeli otsingukastist.
+| Kiht | Kus see asub | Mis see on |
+|---|---|---|
+| **Koondatud tõde** | `memory.md` | Lühike, hoolikalt valitud kokkuvõte sellest, mis on sinu ja su töö juures kõige olulisem. See hoitakse meelega lühike, sest see laaditakse igasse vestlusesse |
+| **Struktureeritud mälestused** | `memory/facts/<name>.md`, üks fail iga fakti kohta | Igas failis on üks püsiv fakt, näiteks otsus, parandus, eelistus, hind, klient või tööriist, mida kasutad. Aegunud faktid liiguvad kausta `memory/facts/archived/` |
+| **Ajajoon** | `memory/journal/<year-month>.md`, lisaks `memory/today.md` | Lisanduv logi kuu kaupa ja lühike kokkuvõte tänasest tööst. Midagi ei visata ära |
 
-## Impordi varasemad vestlused
+On veel üks fail, `memory/recall.mjs`, see on väike otsinguprogramm, mida Taibu käivitab sinu struktureeritud mälestuste peal siis, kui küsid midagi vana kohta.
 
-Esimesel korral vajuta mälupaneelil **Impordi varasemad vestlused**. Taibu muudab su senise vestlusajaloo otsitavaks mäluks, nii et alustad kõigega, mida oled juba rääkinud, mitte nullist.
+## Kuidas mälestused kirja pannakse
 
-## See korrastab end ise
+Selleks on kolm viisi ja kõik kolm jõuavad samadesse failidesse.
 
-Iganädalane **Mälu korrastus** rutiin (lisa see Rutiinide lehelt) koondab hiljutised märkmed koondtõkke, ühendab duplikaadid ja arhiveerib aegunud faktid. Tähtsaid ja kinnitatud fakte ei eemaldata kunagi automaatselt. Arhiveeritud faktid jäävad otsitavaks.
+1. **Automaatselt, pärast iga vahetust.** Rakendus vaatab, mis just juhtus, ja salvestab kõik, mis tundub püsiva faktina.
+2. **Taibu poolt töö käigus.** Kui teed otsuse, parandad midagi, väljendad eelistust või mainid midagi oma töökorralduse kohta, kirjutab Taibu fakti kohe üles, mitte ei oota automaatset läbivaatust.
+3. **Sinu poolt.** Kõik Mälu paneelis on muudetav ja "Muuda tekstina" avab ümberkirjutamiseks toorfaili `memory.md`.
 
-## See jääb sinu arvutisse
+Struktureeritud mälestus ei ole lihtsalt üks lause. Iga selline kirje talletab **millal see õpiti, milline agent selle õppis, millisest vestlusest see pärineb, kes seda ütles, sinu täpsed sõnad, failid mida tasub kontrollida, kui oluline see on ja kas see kehtib endiselt**. Just see teeb kuude pärast antud vastuse kontrollitavaks, mitte oletuseks.
 
-Kõik see on lokaalne. Su mälufailid asuvad su projektis su arvutis. Taibu ei saada neid kuhugi ja meenutamine töötab täielikult võrguta. Kontroll jääb sinule: ava mälupaneel igal ajal, et näha kõike, mida Taibu teab, ja eemalda see, mida soovid kustutada.
+## Mida Taibu loeb ja millal
+
+Seda tasub teada, sest see selgitab, miks Taibu teab mõnda asja kohe ja mõne puhul peab otsima.
+
+**Laaditakse igasse sõnumisse, alati:**
+
+- `memory.md`, koondatud tõde
+- kokkuvõte sinu kõige uuematest ja olulisematest struktureeritud mälestustest
+- `memory/today.md`
+
+**Avatakse ainult vajaduse korral:** täielikud faktifailid, kuude kaupa peetud päevik ja kõik muu sinu projektis. Vanem või täpsem kontekst tuuakse välja meenutuse kaudu, mitte ei hoita kogu aeg kaasas.
+
+Seepärast hoitakse koondatud tõde lühike. See on osa, mida Taibu ei pea kunagi eraldi üles otsima, seega peaks seal olema see, mis on sinu kohta üldiselt tõsi, mitte iga üksik detail, mida oled kunagi maininud.
+
+## Meenutus
+
+Küsi millegi kohta, mis juhtus kuid tagasi, just nende sõnadega mis pähe tulevad. Taibu otsib oma struktureeritud mälestustest ja vastab **viidetega**: milline fail, mis kuupäev, kes seda ütles ja milliseid täpseid sõnu kasutasid.
+
+Kui ta ei leia midagi, ütleb ta seda otse ega paku. Sama moodi saad otsida ka ise Mälu paneeli ülaservas olevast kastist.
+
+Meenutus loeb faktifaile. Kui sinu teadmine on läinud ainult faili `memory.md`, siis ei ole tal midagi otsida ja Taibu ütleb seda.
+
+## Impordi oma ajalugu
+
+Esimesel korral vajuta **"Impordi varasemad vestlused"**. Taibu muudab sinu olemasoleva vestlusajaloo otsitavaks mäluks, nii et alustad kõigega, mida oled talle juba rääkinud.
+
+## Kuidas hoida kõik korras
+
+Lisa rutiin **"Memory tidy-up"** ja Taibu korrastab kord nädalas, ühendab duplikaadid, arhiveerib aegunud faktid ja viib korduvad teemad koondatud tõe sisse. Olulisi ja kinnitatud fakte ei eemaldata kunagi automaatselt.
+
+## Privaatsus
+
+Mälu on lokaalne. See on sinu projektikaustas tavaliste failidena ja midagi ei saadeta Taibu serverisse.
+
+Mälestus, millel **puudub ulatus, on privaatne** ja ei lahku kunagi sinu arvutist. See on vaikimisi seadistus. Jagatakse ainult neid mälestusi, millele on selgelt antud tiimi ulatus, ja ka siis krüptitakse need enne väljasaatmist. Vaata jaotist **Tiimina töötamine**, et mõista, kuidas ulatused töötavad.
+
+Kahte faili ei jagata tiimiga kunagi, ükskõik kuidas jagamine on seadistatud, sinu sisseelamise vastused failis `intake.md` ja sinu isiklik profiil failis `context/persona.md`. Ülejäänu kohta, mida Taibu sinu kohta kirjutab, vaata jaotist **Sinu andmed**.

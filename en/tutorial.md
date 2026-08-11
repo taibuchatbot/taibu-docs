@@ -8,15 +8,14 @@ The purple rail on the left is your navigation:
 |---|---|
 | House | Home |
 | Speech bubbles | Chats, your agents |
+| Grid | Apps |
 | Calendar-clock | Routines |
 | Inbox | Outbox, drafts waiting for you |
-| Grid | Apps |
 | Puzzle piece | Skills |
 | People | Team |
 | Plug | Connections |
-| Brain | My data and goals |
 | Question mark | Help |
-| Gear | Settings |
+| Gear | Settings, including My data and goals, Keys and Memory |
 
 Next to it is the sidebar with your project switcher, file search and file tree. The rest is your working area.
 
