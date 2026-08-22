@@ -49,6 +49,24 @@ If you are in a team, your admin's shared rules appear inside a marked block in 
 
 The three memory layers, `memory.md`, `memory/facts/` and `memory/journal/`, have their own page. See **What Taibu remembers**.
 
+## The activity log
+
+Taibu keeps a record of what happens in the app: what you asked for, every tool an agent ran and with what, and files the app wrote, renamed or deleted. It exists so that if anyone ever asks what happened, there is a straight answer instead of a memory.
+
+Three things make it worth having:
+
+- **It is always on.** You cannot switch it off, and neither can Taibu. A record that can be turned off before doing something is not a record.
+- **It cannot be edited.** Every entry is sealed to the one before it, so changing or removing any entry breaks everything after it. **Settings → Activity log** tells you whether it is intact, and names the first entry that is not if something has been touched.
+- **An independent authority confirms it.** Every so often Taibu sends a checksum of the record, and nothing else, to an independent timestamping service. That proves the record existed in exactly that state at that time. Your prompts, files and paths never leave the machine, only a 32 character checksum.
+
+Passwords and API keys are removed before anything is written.
+
+**Where it lives:** in Taibu's own folder on your computer, not in your project, so team sharing never touches it and the AI cannot write to it.
+
+**Who can read it:** you. It is never uploaded, and MGR Tech Solutions never receives it. If you ever need to prove what happened, you produce it and anyone can check it with the verifier that ships with Taibu.
+
+**What it does not do:** it records what was asked and what was done, not everything the AI said back. And nothing on your own computer can stop somebody with administrator rights deleting the whole folder. What it guarantees is that a record which is still there has not been quietly altered.
+
 ## Work the app manages
 
 The `.taibu/` folder is the app's own bookkeeping: your chats, the drafts waiting in the Outbox, the reports your routines produced, and your team keys and sync state. You do not need to open it, and it is best left alone.
@@ -60,6 +78,9 @@ The `.taibu/` folder is the app's own bookkeeping: your chats, the drafts waitin
 | `intake.md`, `context/persona.md`, `.env` | **Never** |
 | Memory with no scope | **Never**, and no scope is the default |
 | `company/`, `references/`, `decisions/`, skills, scoped memory | Only if your admin has shared that folder with a scope you are in, and only encrypted |
-| Anything at all, to Taibu | Never. There is no Taibu server holding your work |
+| Your work, to MGR Tech Solutions | **Never.** No file, prompt or reply is ever uploaded |
+| Your licence key, an anonymous machine id and your email | Sent when you activate and each time the app starts, to check the licence is valid |
+| A checksum of the activity log | Sent to an independent timestamping service. 32 characters, no content |
+| Requests to your AI engine | Go to whoever you chose, Anthropic or OpenAI, under your own account and their terms |
 
 Everything above is a plain text file. You can open it in any editor, back it up, put it in git, or delete it. If you stop using Taibu, your knowledge stays exactly where it is.
