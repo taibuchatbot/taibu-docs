@@ -4,7 +4,7 @@ Taibu mäletab sinu tööd kuude kaupa. Kõik on sinu projektis lihtfailidena, m
 
 **Hammasratta ikoon → Seaded → "Mälu"**
 
-![The memory panel](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/15-memory.png)
+![The memory panel](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/et/15-memory.png)
 
 ## Kolm kihti ja failid nende taga
 

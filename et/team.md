@@ -1,50 +1,81 @@
-# Tiimiga jagamine
+# Tiimina töötamine
 
-Taibu oskab jagada teadmisi üle tiimi: mälu, oskused, references, otsused, brändi kontekst. Lokaalsuse lubadus jääb kehtima: kõik krüpteeritakse **otsast otsani sinu arvutis** ja sünkroonitakse taristu kaudu, mis **kuulub teie tiimile** — jagatud kaust (NAS, Syncthing) või teie oma git-hoidla. Taibu serverit ei ole kunagi vahel.
+**Inimeste ikoon → "Tiim"**
+
+Tiimis jagamine laseb grupil töötada sama ettevõtte teadmise pealt. Kõik jagatu on **krüpteeritud sinu enda arvutis** enne, kui see kuhugi liigub, ja see sünkroonib läbi taristu, **mida sina omad**. Mitte miski ei liigu läbi Taibu serveri.
 
 ## Kuidas see töötab
 
-- **Admin** loob tiimi, määrab **skoobid** (näiteks sales, marketing, klient-a) ja otsustab inimese ja skoobi kaupa, kes saab **lugeda** ja kes ka **kirjutada**.
-- Kõik jagatav krüpteeritakse skoobivõtmetega enne, kui see sinu masinast lahkub. Tiimikaaslane, kellel skoobi võtit pole, ei saa selle skoobi andmeid lugeda — isegi kui ta näeb sünkikausta. Sünkikohas on alati ainult šifreeritud sisu.
-- Sünk on **kahesuunaline**: kui lisad oskuse või salvestad otsuse skoopi, kuhu sul on kirjutusõigus, saavad selle kõik sama skoobi liikmed. Kui nemad midagi muudavad, saad sina. Konfliktsete muudatuste puhul jääb uusim versioon ja teine salvestatakse `.conflict` failina, nii et midagi ei kao.
-- Kõik, mis on märgitud **privaatseks** (või üldse märkimata), ei lahku kunagi sinu arvutist. See on vaikimisi nii.
+Tiimi juht loob **skoobid** ehk sihtrühmad, näiteks müük, turundus või üks iga kliendi jaoks, otsustab, kes millisesse kuulub, ja valib, mida jagada. Kui tiimikaaslasel ei ole skoobi võtit, siis ta päriselt ei saa selle skoobi sisu lugeda, isegi kui ta näeb sünkroonimiskausta.
 
-## Alustamine
+![Skoobid, ligipääsumaatriks ja jagatud kausta lülitid](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/et/23-team-admin.png)
 
-1. **Admin:** ava Tiimi leht (inimeste ikoon), vali Loo tiim, määra sünkikoht (jagatud kaust või git-URL) ja saada tiimikaaslastele **tiimikood**.
-2. **Liige:** kleebi tiimikood jaotisse Liitu tiimiga ja saada oma **liikmekood** adminile.
-3. **Admin:** lisa liige, määra maatriksis tema õigused ja vajuta Sünkrooni. Valmis — edaspidi sünkroonivad mõlemad pooled ühe klõpsuga (ja projekti avamisel automaatselt).
+## Kuhu see sünkroonib
 
-## Mälu ja kaustade jagamine
+| Valik | Sobib hästi |
+|---|---|
+| **Jagatud kaust** | Kõige lihtsam ja kiirem. Suuna see kausta, mida hoiab sünkroonis Syncthing, NAS või pilveketas |
+| **Git-hoidla** | Sinu enda privaatne hoidla koos täieliku ajalooga. Kõik peavad enne giti sisse logima |
 
-- Igal struktureeritud mälestusel (faktil) on **skoop** — määra see paneelil „Mida Taibu mäletab". Ilma skoobita fakt on privaatne.
-- Kaustad nagu `references/`, `decisions/` või oskus kaustas `.claude/skills/` jagatakse, sidudes need Tiimi lehel skoobiga.
+Git-hoidla puhul peab igal inimesel olema oma masinas git sisse logitud, enne kui see töötab. Käivita `gh auth login` või klooni hoidla üks kord käsitsi, et sisselogimine jääks meelde. Taibu ei salvesta sinu tokenit, seega kasutab ta sinu süsteemi git-sisselogimist. Kui see puudub, ütleb Tiimi leht seda sulle.
 
-## Uue tiimiliikmena liitumine
+## Seadistamine juhina
 
-Kui keegi uus alustab, loob ta oma uue projekti (mitte koopia sinu omast) ja seadistab selle. Taibu küsib, kas ta seadistab oma äri või liitub tiimiga. Tiimiliikmelt ei küsita kunagi, mida ettevõte müüb või kes on kliendid, sest see pole tema välja mõelda: ta seadistab ainult iseenda ja oma kirjutamisviisi. Ettevõtte teadmine tuleb sünkides.
+1. Vajuta **"Loo tiim"**, pane nimi ja vali kaust või git
+2. Lisa **skoob**, näiteks `company`
+3. Lülita sisse see, mida tahad jagada
+4. Kopeeri **tiimikood** ja saada see kolleegidele
 
-Järjekord on seega: loo projekt, liitu koodiga tiimiga, siis lõpeta isiklik seadistus. Pärast seda on tal esimesest päevast olemas sinu ettevõtte käsiraamat, viited, otsused ja jagatud mälu.
+## Liitumine liikmena
 
-## Isiklik jääb isiklikuks
+1. Kleebi tiimikood jaotisesse **"Liitu tiimiga"**
+2. Vajuta **"Sünkrooni kohe"**. Näed teadet "Ootan administraatori kinnitust"
+3. Tiimi juht kinnitab sind ühe vajutusega ja sinu ligipääs jõuab kohale järgmise sünkroonimisega
 
-Kaks faili ei lahku kunagi kellegi arvutist, ükskõik mida jagamisseaded ütlevad: tema isiklikud vastused ja tema häälprofiil. Igaüks säilitab oma kirjutamisviisi ja identiteedi, samal ajal kui ettevõtte teadmine on jagatud. Keegi ei päri kellegi teise isiksust.
+![Mida liige näeb kinnituse ootel](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/et/24-team-pending.png)
 
-## Millised projektid sünkroonivad
+Sina saadad koodi ainult ühe korra.
 
-Tiimi kuulumine käib **projekti kaupa**. Ühe projekti ühendamine tiimiga ei puuduta su teisi projekte ja jagatakse ning raporteeritakse ainult ühendatud projekti. Erinevad projektid võivad kuuluda eri tiimidesse, aga sama projekt ei saa kuuluda kahte tiimi ega kaks projekti ühte ja samasse tiimi ühes arvutis.
+## Mida saad jagada
 
-## Tiimi ülevaade
+Ettevõtte käsiraamat, ettevõtte reeglid, mälu, ettevõtte kontekst, oskused, viited, otsused, tööriistad ja ükskõik milline kaust, mille valid.
 
-Kui admin lülitab sisse Tiimi ülevaate, koostab iga liikme Taibu väikese **tegevusaruande** ja saadab selle adminile automaatselt: mitu vestlust ja milliste agentidega, kuidas mälu kasvas, millised teemad ja oskused esile kerkisid, aktiivsus päevade kaupa viimase kahe nädala jooksul, ja kus keegi näib takerduvat (pikk edasi-tagasi, korduvad vead, vaiksed perioodid). Lühikese kirjaliku kokkuvõtte kirjutab liikme oma Taibu tema enda arvutis.
+Kui lülitad kausta välja, siis jagamine peatub sellest hetkest alates. See ei kustuta midagi: kõigile jääb alles koopia, mis neil juba on, ja sinu enda failid jäävad täpselt sinna, kus nad on.
 
-Admin näeb **Tiimi ülevaadet**: kogu tiimi numbrid, aktiivsus päevade kaupa, enim käsitletud teemad, „vajab abi" nimekiri ja kaart iga liikme kohta.
+## Ühes suunas või mõlemas
 
-**Mis sinna kunagi ei satu:** sõnumite sisu, mustandid, privaatne või skoobita mälu, `.env` ja saladused. Kõik, mis satub, puhastatakse enne arvutist lahkumist e-postiaadressidest, telefoninumbritest, linkidest, võtmetest ning kaardi- ja kontonumbritest, ja kokkuvõte kirjutatakse juba puhastatud andmete põhjal.
+Igal üksusel on seadistus **"Kes võib seda muuta"**:
 
-Liige saab Tiimi lehel näha täpselt, mida tema kohta raporteeritakse. Kuna tegu on ettevõtte tööandmetega, ei saa ta seda muuta ega blokeerida, ainult vaadata. Päris isiklikud märkmed kuuluvad **privaatsesse** mällu, mis ei lahku arvutist üldse.
+- **Ainult mina**. Juhi koopia on tõde. Liikmed loevad seda, nende muudatused edasi ei levi. Kasuta seda ettevõtte põhiteadmiseks
+- **Igaüks skoobis**. Kahesuunaline. Kõik panustavad ja kõik saavad. Kasuta seda jagatud mälu jaoks
 
-## Ausad piirid
+Kui muudatused lähevad konflikti, jätab süsteem alles uuema versiooni ja salvestab teise selle kõrvale, nii et midagi ei lähe kaotsi.
 
-- Liikme eemaldamine roteerib võtmed, nii et ta ei saa enam midagi uut, aga juba sünkroonitud koopiad jäävad tema masinasse. See on iga võrguvaba süsteemi füüsikaline omadus.
-- Admini seade hoiab tiimi peavõtit — varunda see nagu parool.
+## Ettevõtte reeglid ilma kellegi oma üle kirjutamata
+
+Sinu juhiste fail segab ettevõtte põhimõtteid isiklike asjadega, nagu sinu nimi, keel ja prioriteedid, seega Taibu ei sünkrooni seda faili kunagi.
+
+Selle asemel kirjutab juht ettevõtte reeglid ühte kohta ja iga liikme Taibu lisab need tema enda juhistesse eraldi märgitud plokina. Isiklikud seaded jäävad puutumata. Muudad reeglit ja kõik saavad selle kätte.
+
+## Mida ei jagata kunagi
+
+**Sinu isiklik profiil ja sinu hääl ei lahku kunagi sinu arvutist**, ükskõik mida seaded ütlevad. Igaüks hoiab alles oma kirjutamisviisi. Mälu ilma skoobita on privaatne ja see on vaikimisi nii.
+
+## Tiimi ülevaated
+
+Juht saab tegevusaruanded sisse lülitada. Iga liige otsustab ise, kas osaleda, ja näeb täpselt, mida saadetaks.
+
+**Saadetakse:** mitu vestlust ja milliste agentidega, kuidas mälu kasvas, teemade ja oskuste nimed, tegevus päevade kaupa ja kohad, kus töö paistab takerduvat.
+
+**Mitte kunagi ei saadeta:** mida sina kirjutasid või millele AI vastas, sinu mustandid, sinu privaatne mälu, sinu võtmed, mitte midagi isiklikku.
+
+![Nõusolekukaart, mida liige näeb](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/et/25-team-consent.png)
+
+Midagi ei saadeta enne, kui oled nõus, ja sa saad selle igal ajal peatada.
+
+## Piirangud, mida tasub teada
+
+- Kellegi eemaldamine vaatab ettepoole. Tema võtmed vahetatakse välja, nii et ta ei saa enam midagi uut, aga juba sünkroonitud koopiad jäävad tema masinasse alles
+- Tiimi põhivõti on juhi seadmes. Varunda seda nagu parooli
+- Jagamine on teadmise jaoks, mitte meedia jaoks. Igal skoobil on suuruspiirang
+- Tiimi liikmesus käib projekti kaupa. Kui ühendad ühe projekti, siis teised jäävad puutumata
