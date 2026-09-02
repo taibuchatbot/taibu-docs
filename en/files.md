@@ -10,7 +10,7 @@ The sidebar shows your project. Click a file to open it as a tab. Right-click fo
 
 **Core Taibu files are protected**: your instructions, memory, profile and settings cannot be renamed, moved or deleted. Everything you create is fully editable.
 
-The eye button toggles "Show all files", revealing technical files normally kept out of the way.
+The eye button toggles "Show all files", revealing technical files normally kept out of the way. Drag files in from your desktop to copy them into the project.
 
 ![A file open beside the chat](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/22b-split.png)
 
@@ -21,10 +21,12 @@ The eye button toggles "Show all files", revealing technical files normally kept
 | **HTML** | Opens as a rendered preview; toggle "Code" to edit |
 | **CSV / TSV** | Opens as a table; toggle "Text" for the raw file |
 | **Images, video, audio, PDF** | Open in a viewer or player |
+| **Markdown and documents** | Open as a formatted document: headings, bold, lists, checkboxes and tables render as you type, and tables are edited cell by cell. The file on disk stays plain text |
+| **Word and Excel** | Open in a reader |
 | **Skills** | Open in a form editor; toggle "Raw" for the source |
 | Everything else | A plain editor. Ctrl+S saves |
 
-**"Open beside"** on any tab puts it side by side with another.
+**"Open beside"** on any tab puts it side by side with another. **Ctrl+F** searches the file you are looking at, with next and previous through the matches.
 
 ## Terminal
 

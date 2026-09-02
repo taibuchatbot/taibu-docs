@@ -7,6 +7,8 @@ An **agent** is one chat tab dedicated to one goal. Separate goals into separate
 - Switch away and it keeps working; the answer waits for you
 - Closing an agent with real content moves it to "Recently closed" on Home, where you can reopen it
 
+The **Agents** panel lists every agent you have started, under **Active** and **Closed**. An open one offers **Close**, which keeps the agent and its conversation. A closed one offers **Open** and delete.
+
 ![Four agents, one per goal](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/11-agents.png)
 
 ## The composer
@@ -32,7 +34,7 @@ Answers arrive as normal text with clickable links. Along the way you may see:
 - **Proposed route** cards for plans, with "Approve route" and "Adjust"
 - **Tool cards** showing what it did: edited a file, ran a command. Filenames are clickable
 - **Images and video** inline, and documents as clickable chips
-- A **"{n} background steps"** chip folding away routine work. The eye icon top right shows everything
+- A **"{n} background steps"** chip folding away routine work. Click the chip to unfold that one answer. To see them everywhere, tick **"Show technical details in chat"** in Settings
 
 ![An answer with a plan and tool cards](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/13-answer.png)
 

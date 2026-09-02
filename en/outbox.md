@@ -6,14 +6,18 @@ Every email, post or message Taibu prepares lands here as a draft. The amber num
 
 ## Reviewing
 
-The right pane shows which routine or skill produced it, the recipient, and the body **in an editable box**. For small fixes, just type in the box; your edit is saved before sending.
+The right pane shows which routine or skill produced it, the recipient, and the body. The body is read-only until you say how you want to change it, so you always know which you are doing:
+
+- **Edit myself** puts the cursor in the text. Change what you like, then **Save changes**. Until you save, the draft is marked "Edited, not saved yet", and **Discard changes** puts it back.
+- **Edit with agent** hands the draft to an agent for a full rewrite.
 
 ![A draft waiting for approval](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/19-outbox.png)
 
 | Button | What it does |
 |---|---|
 | **Approve & send** | Marks it approved, then delivers it |
-| **Adjust** | Opens the draft in an agent for a full rewrite |
+| **Edit myself** | Makes the text editable. **Save changes** writes it back |
+| **Edit with agent** | Opens the draft in an agent for a full rewrite |
 | **Skip** | Moves you to the next draft. It does **not** reject this one, which stays waiting |
 | **Trash** | Discards the draft, with an Undo option |
 

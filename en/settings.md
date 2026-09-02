@@ -40,4 +40,4 @@ Routines always run on Claude, whichever engine you picked for chats.
 
 Skills, instructions and templates update themselves quietly and safely. Everything is signed, and anything you edited yourself is never overwritten.
 
-The app itself does not auto-update. When a new version exists, Home shows "Version X is out" with a Download link.
+The app itself does not auto-update. When a new version exists, a purple bar at the top of Home says "Version X is out" with a Download button. Settings shows the same next to your version number. Either one downloads the installer for you.

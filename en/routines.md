@@ -2,7 +2,7 @@
 
 A **routine** is a prompt that runs on a schedule: a morning brief, a weekly audit, an evening journal.
 
-**Calendar-clock icon → "Routines"**
+**Calendar-clock icon → "Routines"**. The green number on the icon is how many routines are switched on.
 
 ![The routine list, with one routine open](https://raw.githubusercontent.com/taibuchatbot/taibu-docs/main/images/17b-routines-list.png)
 

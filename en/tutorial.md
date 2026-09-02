@@ -10,6 +10,7 @@ The purple rail on the left is your navigation:
 | Speech bubbles | Chats, your agents |
 | Grid | Apps |
 | Calendar-clock | Routines |
+| Tick list | To-do, the things only you can do |
 | Inbox | Outbox, drafts waiting for you |
 | Puzzle piece | Skills |
 | People | Team |

@@ -40,6 +40,8 @@ You only ever send one code.
 
 Company playbook, company rules, memory, company context, skills, references, decisions, tools, and any folder you pick.
 
+Turning a folder off stops sharing it from that moment. It is not a delete: everyone keeps the copy they already have, and your own files stay exactly where they are.
+
 ## One way or both ways
 
 Each item has a **"Who can change this"** setting:
