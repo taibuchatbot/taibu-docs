@@ -3,12 +3,12 @@
   "claude": [
     {
       "id": "sonnet",
-      "label": "Sonnet 5",
+      "label": "Sonnet 5.5",
       "desc": "Balanced, fast and capable (default)"
     },
     {
       "id": "opus",
-      "label": "Opus 5",
+      "label": "Opus 5.5",
       "desc": "Most capable, for the hardest builds"
     },
     {
